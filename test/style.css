@@ -1,0 +1,91 @@
+body{
+    /* background-color: hsl(172, 67%, 45%); */
+    background-color: #c5e4e7;
+}
+
+.content{
+    font-family:monospace;
+    font-weight: 700;
+}
+
+.wrap{
+    background-color: hsl(0, 0%, 100%);
+    height:600px;
+    width: 1200px;
+    border: 0px;
+    border-radius: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .numberinput{
+    text-align: right;
+    border-radius: 3px;
+    height: 40px;
+    width:80%;
+    margin-top: 2%;
+    font-size: 24px;
+    background-color:#f3f8fb;
+    border: none;
+    color:hsl(183, 100%, 15%);
+  }
+
+.leftbox{
+    height: 85%;
+    width: 44%;
+    float: left; 
+    padding: 30px;
+    display: block;
+   
+
+}
+.rightbox{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    height: 75%;
+    width: 40%;
+    float:  right;
+    text-align: left;
+    padding: 30px;
+    margin: 40px 40px 0 0;
+    display: block;
+    font-size: 20px;
+    color:hsl(0, 0%, 100%);
+    
+}
+
+.tipbutton{
+    float: left;
+    height: 50px;
+    width: 130px;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: none;
+    
+}
+
+.amountbutton{
+    float: right;
+    font-size: 24px;
+    text-align: right;
+    height: 55px;
+    width: 185px;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    color:hsl(185, 54%, 41%);
+    
+}
+
+.resetbutton{
+    height: 60px;
+    width: 360px;
+    margin-top: 30%;
+    font-size: 24px;
+}
+ 

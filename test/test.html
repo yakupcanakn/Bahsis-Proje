@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <font-family:monospace;>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="content" style="font-size:50px;">
+        <div style="margin-top: 7%; text-align: center;">
+            Bahşiş <br>Hesaplayıcı
+        </div>
+        <center>
+        <div class="wrap" style="margin-top: 3%;">
+            <div class="leftbox" style="margin-top: 30px;margin-left: 20px;">
+                <div style="font-size:20px; text-align: left;">Hesap
+               <br>
+                <input class="numberinput" type="number"  value="0"></div>
+                
+                <div style="font-size:20px; text-align: left; margin-top: 50px;">Bahşiş Oranı %
+                    <br>
+                    <input class="tipbutton" type="button" value="5%">
+                    <input class="tipbutton" type="button" value="15%">
+                    <input class="tipbutton" type="button" value="20%">
+                    <input class="tipbutton" type="button" value="25%">
+                    <input class="tipbutton" type="button" value="50%">
+                    <input style="background-color: #c5e4e7!important; color: hsl(183, 100%, 15%)!important;" class="tipbutton" type="button" value="Custom">                    
+                </div>
+                <div style="font-size:20px; text-align: left; margin-top: 200px;">Kişi Sayısı
+                    <br>
+                     <input class="numberinput" type="number" value="0">
+                </div>
+            </div>
+            <div class="rightbox">
+                <div style="margin-top: 20px;">
+                    <input class="amountbutton" type="number" disabled value="0"></div>
+                    Bahşiş Miktarı<p style="color: hsl(185, 54%, 41%);">/Person</p>
+                
+                <div style="margin-top: 50px;">
+                    <input class="amountbutton"  type="number" disabled value="0"></div>
+                    Toplam<p style="color: hsl(185, 54%, 41%);">/Person</p>
+                
+                <center><div><input class="resetbutton" type="reset" value="Reset"></div></center>
+            </div>
+        </div></center>
+    </div>
+  
+    <select name="bahsis" id="sb">
+        <option value="10">10</option>
+        <option value="20">20</option>
+    </select>
+    Rasgele Bahşiş :   <input type="checkbox" id="custom"><br>
+    <input type="text" name="bahsis" id="bahsis"><br>
+       <input type="text" name="price" value="hesap giriniz" id="price"><br>
+    
+    <button id="btn" onclick="change()">Bahşiş Hesapla Hesapla </button>
+    
+</body>
+</html>
