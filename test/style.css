@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     /* background-color: hsl(172, 67%, 45%); */
     background-color: #c5e4e7;
@@ -18,8 +22,8 @@ body{
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-  }
-  .numberinput{
+}
+.numberinput{
     text-align: right;
     border-radius: 3px;
     height: 40px;
@@ -29,7 +33,7 @@ input[type=number]::-webkit-inner-spin-button {
     background-color:#f3f8fb;
     border: none;
     color:hsl(183, 100%, 15%);
-  }
+}
 
 .leftbox{
     height: 85%;
@@ -54,21 +58,58 @@ input[type=number]::-webkit-inner-spin-button {
     color:hsl(0, 0%, 100%);
     
 }
-
+/* input[type=radio] {
+    -webkit-appearance: none;
+}
 .tipbutton{
     float: left;
     height: 50px;
     width: 130px;
     margin-top: 20px;
     margin-right: 20px;
-    text-align: center;
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 5px;
+    
+} */
+.hidebx{
+    display: none;
+    float: left;
+    height: 50px;
+    width: 130px;
+    margin-top: 20px;
+    margin-right: 20px;
     font-size: 24px;
     background-color: hsl(183, 100%, 15%);
     color:hsl(0, 0%, 100%);
     border-radius: 10px;
     border: none;
-    
 }
+
+.lbl-radio{
+    text-align: center;
+    float: left;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    border: 5px;
+}
+
+.display-box .size{
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+input[type=radio]:checked + .lbl-radio{
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+} 
+
 
 .amountbutton{
     float: right;
