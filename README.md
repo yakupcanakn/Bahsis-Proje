@@ -1,6 +1,8 @@
 # Bahsis-Proje
 Hesapda bahşiş verme ve kişiye düşen ücret
 
+demo.yakupcanakan.com.tr web adresimizden uygulamamızı kontrol edip test edebilirsiniz.
+
 # Layout
 
 The designs were created to the following widths:
