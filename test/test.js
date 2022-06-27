@@ -56,12 +56,12 @@ function twenty(){
     if(document.getElementById("kisisayisi").value<=0)
     {
       error();     
-      document.getElementById("20").style.backgroundColor='#c5e4e7';
-    document.getElementById("20").style.color='hsl(183, 100%, 15%)';
+      document.getElementById("lbl3").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl3").style.color='hsl(183, 100%, 15%)';
     }else{
         resetbutton();
-        document.getElementById("20").style.backgroundColor='#c5e4e7';
-    document.getElementById("20").style.color='hsl(183, 100%, 15%)';
+        document.getElementById("lbl3").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl3").style.color='hsl(183, 100%, 15%)';
         
     var price = parseInt(document.getElementById("hesap").value|0);
     var clc = price*20/100;
@@ -77,12 +77,12 @@ function twentyfive(){
     if(document.getElementById("kisisayisi").value<=0)
     {
      error();
-      document.getElementById("25").style.backgroundColor='#c5e4e7';
-    document.getElementById("25").style.color='hsl(183, 100%, 15%)';
+      document.getElementById("lbl4").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl4").style.color='hsl(183, 100%, 15%)';
     }else{
         resetbutton();
-        document.getElementById("25").style.backgroundColor='#c5e4e7';
-    document.getElementById("25").style.color='hsl(183, 100%, 15%)';
+        document.getElementById("lbl4").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl4").style.color='hsl(183, 100%, 15%)';
        
     var price = parseInt(document.getElementById("hesap").value|0);
     var clc = price*25/100;
@@ -98,12 +98,12 @@ function fifty(){
     if(document.getElementById("kisisayisi").value<=0)
     {
      error();
-      document.getElementById("50").style.backgroundColor='#c5e4e7';
-    document.getElementById("50").style.color='hsl(183, 100%, 15%)';
+      document.getElementById("lbl5").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl5").style.color='hsl(183, 100%, 15%)';
     }else{
         resetbutton();
-        document.getElementById("50").style.backgroundColor='#c5e4e7';
-    document.getElementById("50").style.color='hsl(183, 100%, 15%)';
+        document.getElementById("lbl5").style.backgroundColor='#c5e4e7';
+    document.getElementById("lbl5").style.color='hsl(183, 100%, 15%)';
         
     var price = parseInt(document.getElementById("hesap").value|0);
     var clc = price*50/100;
@@ -171,12 +171,12 @@ function reset(){
     document.getElementById("lbl1").style.color='hsl(0, 0%, 100%)';
     document.getElementById("lbl2").style.backgroundColor='hsl(183, 100%, 15%)';
     document.getElementById("lbl2").style.color='hsl(0, 0%, 100%)';
-    document.getElementById("20").style.backgroundColor='hsl(183, 100%, 15%)';
-    document.getElementById("20").style.color='hsl(0, 0%, 100%)';
-    document.getElementById("25").style.backgroundColor='hsl(183, 100%, 15%)';
-    document.getElementById("25").style.color='hsl(0, 0%, 100%)';
-    document.getElementById("50").style.backgroundColor='hsl(183, 100%, 15%)';
-    document.getElementById("50").style.color='hsl(0, 0%, 100%)';
+    document.getElementById("lbl3").style.backgroundColor='hsl(183, 100%, 15%)';
+    document.getElementById("lbl3").style.color='hsl(0, 0%, 100%)';
+    document.getElementById("lbl4").style.backgroundColor='hsl(183, 100%, 15%)';
+    document.getElementById("lbl4").style.color='hsl(0, 0%, 100%)';
+    document.getElementById("lbl5").style.backgroundColor='hsl(183, 100%, 15%)';
+    document.getElementById("lbl5").style.color='hsl(0, 0%, 100%)';
     document.getElementById("custom").style.borderStyle="none";
     document.getElementById("custom").style.color="hsl(183, 100%, 15%)";
     document.getElementById("custom").style.backgroundColor="#c5e4e7";

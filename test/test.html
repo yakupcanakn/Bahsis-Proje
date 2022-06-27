@@ -5,81 +5,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="test.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+</style>
 </head>
 <body>
-    <div class="content" style="font-size:50px;">
-        <div style="margin-top: 7%; text-align: center;">
-            Bahşiş <br>Hesaplayıcı
-        </div>
-        <center>
-        <div class="wrap" style="margin-top: 3%;">
-            <div class="leftbox" style="margin-top: 30px;margin-left: 20px;">
-                <div style="font-size:20px; text-align: left;">Hesap
+    <div class="content" style="font-size:5rem;">
+        <h5 style="margin-top: 5%; text-align: center; padding-bottom: 10%;">
+            Bahşiş<br>Hesaplayıcı
+        </h5>
+        <div class="wrap center">
+            <div class="leftbox" style="margin-top: 3rem;margin-left: 2rem;">
+                <div style="font-size:2rem; text-align: left;">Hesap
                <br>
+               <i><img style="height: 2rem; margin:1rem 0 0 1.5rem;" src="türklirası.png" alt="tl"></i>
                 <input class="numberinput" type="number" required min="0"  value="0" id="hesap" onclick="hesap()"></div>
-                
-
-                <div class="radio-group" style="font-size:20px; text-align: left; margin-top: 50px;">Bahşiş Oranı %
+                               
+                <div class="radio-group" style="font-size:2rem; text-align: left; margin-top: 5rem;">Bahşiş Oranı %
                     <br>
-                    
-
+                    <div class="grid-mid">
                         <input class="hidebx" type="radio" onclick="five()" value="5%"  id="5" name="brandtype">
                         <label for="5" class="lbl-radio" id="lbl1">
-                            <div class="display-box">
-                                <div class="size">%5</div>
-                            </div>
+                            <span class="display-box">
+                                <span class="size">%5</span>
+                            </span>
                         </label>
                         <input class="hidebx" type="radio" onclick="fifteen()" value="15%" id="15" name="brandtype">
                         <label for="15" class="lbl-radio" id="lbl2">
-                            <div class="display-box">
-                                <div class="size">%15</div>
-                            </div>
+                            <span class="display-box">
+                                <span class="size">%15</span>
+                            </span>
                         </label>
                         <input class="hidebx" type="radio" onclick="twenty()" value="20%" id="20" name="brandtype">
-                        <label for="20" class="lbl-radio">
-                            <div class="display-box">
-                                <div class="size">%20</div>
-                            </div>
+                        <label for="20" class="lbl-radio" id="lbl3">
+                            <span class="display-box">
+                                <span class="size">%20</span>
+                            </span>
                         </label>
                         <input class="hidebx" type="radio" onclick="twentyfive()" value="25%" id="25" name="brandtype">
-                        <label for="25" class="lbl-radio">
-                            <div class="display-box">
-                                <div class="size">%25</div>
-                            </div>
+                        <label for="25" class="lbl-radio" id="lbl4">
+                            <span class="display-box">
+                                <span class="size">%25</span>
+                            </span>
                         </label>
                         <input class="hidebx" type="radio" onclick="fifty()" value="50%" id="50" name="brandtype">
-                        <label for="50" class="lbl-radio">
-                            <div class="display-box">
-                                <div class="size">%50</div>
-                            </div>
+                        <label for="50" class="lbl-radio" id="lbl5">
+                            <span class="display-box">
+                                <span class="size">%50</span>
+                            </span>
                         </label>
 
                         <input style="background-color: #c5e4e7!important; color: hsl(183, 100%, 15%)!important;" class="lbl-radio" name="brandtype" placeholder="Custom" type="number" onclick="random()" onchange="random()" id="custom">
+                    </div>
                 </div>
 
-
-                <div style="font-size:20px; text-align: left; margin-top: 200px;">Kişi Sayısı &nbsp;&nbsp;&nbsp;&nbsp; <span id="errormsg" style="visibility: hidden;">Değer 0 olamaz</span>
+                <div style="font-size:2rem; text-align: left; margin-top: 4rem;"><span>Kişi Sayısı</span><span id="errormsg" class="msg" style="visibility: hidden;">Değer 0 olamaz !</span>
                     <br>
-                     <input class="numberinput" type="number" min="1" value="0" id="kisisayisi" onclick="kisi()">
-                     
+                    <i><img style="height: 3rem; margin:0.5rem 0 0 1.5rem;" src="person.png" alt="kişi"></i>
+                    <input class="numberinput" type="number" min="1" value="0" id="kisisayisi" onclick="kisi()">
                 </div>
             </div>
             <div class="rightbox">
-                <div style="margin-top: 20px;">
-                    <input class="amountbutton" type="text" required disabled value="0" id="price1" style="font-size: 24px;"></div>
+                <div style="margin-top: 2rem;">
+                    <input class="amountbutton" type="text" required disabled value="₺0.00" id="price1"></div>
                     Bahşiş Miktarı<p style="color: hsl(185, 54%, 41%);">/Person</p>
                 
-                <div style="margin-top: 50px;">
-                    <input class="amountbutton"  type="text" disabled value="0" id="price2" style="font-size: 24px;"></div>
+                <div style="margin-top: 5rem;">
+                    <input class="amountbutton"  type="text" disabled value="₺0.00" id="price2" style="font-size: 2.4rem;"></div>
                     Toplam<p style="color: hsl(185, 54%, 41%);">/Person</p>
                 
-                <center><div><input class="resetbutton" type="reset" value="Reset" id="reset" onclick="reset()" disabled></div></center>
+                <input class="resetbutton" type="reset" value="Reset" id="reset" onclick="reset()" disabled>
+           
+                </div>
             </div>
-        </div></center>
-    </div>
+        </div>
     
 </body>
 </html>

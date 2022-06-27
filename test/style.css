@@ -2,86 +2,84 @@
     box-sizing: border-box;
 }
 
-body{
-    /* background-color: hsl(172, 67%, 45%); */
-    background-color: #c5e4e7;
+html{
+    font-size: 10px;
+    
 }
 
-.content{
-    font-family:monospace;
+body{
+    background-color: #c5e4e7;
+    font-family: 'Space Mono', monospace;
+}
+
+.content{   
+    
     font-weight: 700;
+    position: relative; 
 }
 
 .wrap{
     background-color: hsl(0, 0%, 100%);
-    height:600px;
-    width: 1200px;
-    border: 0px;
+    height:50vh;
+    width:100vh;
+    border: 0rem;
     border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    display: flex;
+    justify-content: space-around;
 }
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
+
 .numberinput{
     text-align: right;
     border-radius: 3px;
-    height: 40px;
+    height: 4rem;
     width:80%;
-    margin-top: 2%;
-    font-size: 24px;
+    font-size: 2.4rem;
     background-color:#f3f8fb;
     border: none;
     color:hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
 }
 
 .leftbox{
-    height: 85%;
-    width: 44%;
-    float: left; 
-    padding: 30px;
-    display: block;
-   
-
+    height: 92%;
+    width: 48%; 
+    padding: 2rem;
+    margin:  2rem 2rem 0 0;
 }
 .rightbox{
     background-color: hsl(183, 100%, 15%);
     border-radius: 20px;
-    height: 75%;
-    width: 40%;
-    float:  right;
+    height: 92%;
+    width: 48%;
     text-align: left;
-    padding: 30px;
-    margin: 40px 40px 0 0;
-    display: block;
-    font-size: 20px;
+    padding: 2rem;
+    margin:  2rem 2rem 0 0;
+    font-size: 2rem;
     color:hsl(0, 0%, 100%);
-    
 }
-/* input[type=radio] {
-    -webkit-appearance: none;
+
+/* Oranlar */
+
+.grid-mid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.tipbutton{
-    float: left;
-    height: 50px;
-    width: 130px;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 24px;
-    background-color: hsl(183, 100%, 15%);
-    color:hsl(0, 0%, 100%);
-    border-radius: 10px;
-    border: 5px;
-    
-} */
+
 .hidebx{
     display: none;
     float: left;
-    height: 50px;
-    width: 130px;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 24px;
+    height: 5rem;
+    width: 12rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 2.4rem;
     background-color: hsl(183, 100%, 15%);
     color:hsl(0, 0%, 100%);
     border-radius: 10px;
@@ -91,42 +89,217 @@ input[type=number]::-webkit-inner-spin-button {
 .lbl-radio{
     text-align: center;
     float: left;
+    height: 5rem;
+    width: 12rem;
+    padding: 1rem;
+    border: 0.5rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 2.4rem;
     border-radius: 10px;
     cursor: pointer;
-    border-radius: 10px;
-    padding: 10px;
-    border: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px;  
+    font-family: 'Space Mono', monospace;
 }
 
 .display-box .size{
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     letter-spacing: 0.5px;
 }
 
 input[type=radio]:checked + .lbl-radio{
-    font-size: 24px;
+    font-size: 2.4rem;
     background-color: hsl(183, 100%, 15%);
     color:hsl(0, 0%, 100%);
 } 
 
+/* sonuç butonları */
 
 .amountbutton{
     float: right;
-    font-size: 24px;
+    font-size: 2.4rem;
     text-align: right;
-    height: 55px;
-    width: 185px;
+    height: 5.5rem;
+    width: 18.5rem;
     background-color: hsl(183, 100%, 15%);
     border: none;
-    color:hsl(185, 54%, 41%);
-    
+    color:hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+            
 }
 
 .resetbutton{
-    height: 60px;
-    width: 360px;
-    margin-top: 30%;
-    font-size: 24px;
+    height: 6rem;
+    width: 36rem;
+    margin-top: 25%;
+    font-size: 2.4rem;
+    font-family: 'Space Mono', monospace;
+    margin-left: 17%;
+}
+i{
+    position: absolute;
+    font-size: 1rem;
+
+}
+.msg{
+    margin-left: 10%;
 }
  
+@media(min-width:375px) and (max-width:1440px)
+{
+
+    html{
+        font-size: 10px;
+    }
+
+    .wrap{
+        flex-direction: column;
+        height:120vh;
+        width:100%;
+        top: 0;
+        left: -0.25%;
+        margin-top: 40%;
+    }
+
+    .grid-mid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .content{
+       height: 50%;
+       text-align: center;
+    }
+
+    .leftbox{
+        height: 45vh;
+        width: 111%; 
+        
+    }
+    .rightbox{
+        margin-top: 15rem;
+        height: 50vh;
+        width: 90%; 
+        margin-left: 5%;     
+    }
+    .resetbutton{
+        height: 5rem;
+        width: 20rem;
+        font-size: 2.4rem;
+        
+    }
+    .msg{
+        margin-left: 10%;
+        word-wrap:break-word;
+    }
+     
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 376px)
+{
+    html{
+        font-size: 10px;
+    }
+
+    .wrap{
+        flex-direction: column;
+        height:150vh;
+        width:100%;
+        top: 0;
+        left: -0.25%;
+        margin-top: 40%;
+    }
+
+    .grid-mid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .content{
+       height: 50%;
+       text-align: center;
+    }
+
+    .leftbox{
+        height: 60vh;
+        width: 111%; 
+        
+    }
+    .rightbox{
+        margin-top: 15rem;
+        height: 60vh;
+        width: 90%; 
+        margin-left: 5%;     
+    }
+    .resetbutton{
+        height: 5rem;
+        width: 20rem;
+        font-size: 2.4rem;
+        margin-top: 5%;
+        
+    }
+    .msg{
+        margin-left: 20%;
+        word-wrap:break-word;
+    }
+}
+@media only screen and (min-device-width : 389px) and (max-device-width : 395px)
+{
+    .msg{
+        margin-left: 20%;
+        word-wrap:break-word;
+    }
+}
+@media only screen and (min-device-width : 396px) and (max-device-width : 415px)
+{
+    .msg{
+        margin-left: 30%;
+        word-wrap:break-word;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 821px)
+{
+    .resetbutton{
+        height: 5rem;
+        width: 20rem;
+        font-size: 2.4rem;
+        margin-top: 10%;
+        margin-left: 30%;   
+    }
+    .rightbox{
+        margin-top: -15rem;
+        height: 45vh;
+        width: 90%; 
+        margin-left: 5%;     
+    }
+    .wrap{
+        flex-direction: column;
+        height:120vh;
+        width:100%;
+        top: 0;
+        left: -0.25%;
+        margin-top: 40%;
+    }
+}
+@media only screen and (min-device-width : 822px) and (max-device-width : 1440px)
+{
+    .rightbox{
+        margin-top: -35rem;
+        height: 45vh;
+        width: 90%; 
+        margin-left: 5%; 
+    } 
+    .wrap{
+        flex-direction: column;
+        height:80vh;
+        width:100%;
+        top: 0;
+        left: -0.25%;
+        margin-top: 20%;
+    }
+    .resetbutton{
+        height: 5rem;
+        width: 20rem;
+        font-size: 2.4rem;
+        margin-top: 20%;
+        margin-left: 40%;   
+    }
+}
